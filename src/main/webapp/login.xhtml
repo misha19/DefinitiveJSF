@@ -13,6 +13,14 @@
     <h1>Log In</h1>
 
     <h:form>
+        <h:outputLabel for="email" value="Email" />
+        <h:inputText id="email" value="#{login.email}"/>
+        <br />
+        <h:outputLabel for="password" value="Password" />
+        <h:inputSecret id="password" value="#{login.password}" />
+        <br />
+        <h:commandButton value="Login" action="#{login.submit}" />
+        <h:messages />
 
     </h:form>
 </h:body>
